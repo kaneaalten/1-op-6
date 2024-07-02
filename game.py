@@ -14,7 +14,7 @@ class MainApp:
         self.label = tk.Label(self.master, text="Welkom bij de Applicatie!")
         self.label.pack(pady=20)
         
-        self.play_button = tk.Button(self.master, text="Start Getallen Raden", command=self.open_getallen_raden)
+        self.play_button = tk.Button(self.master, text="Start 1 op 6 Spel", command=self.open_getallen_raden)
         self.play_button.pack(pady=10)
         
         self.quit_button = tk.Button(self.master, text="Quit", command=self.master.quit)
@@ -27,7 +27,7 @@ class MainApp:
 class GetallenRadenApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("Getallen Raden Spel")
+        self.master.title("1 op 6 Spel")
         self.master.geometry("400x300")
         
         self.target_number = random.randint(1, 6)
